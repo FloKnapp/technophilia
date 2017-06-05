@@ -9,6 +9,7 @@ import { MenuComponent } from './menu/menu.component';
 import { HomepageComponent } from './site/homepage/homepage.component';
 import { ProfileComponent } from './site/profile/profile.component';
 import { ContactComponent } from './site/contact/contact.component';
+import { HttpModule } from "@angular/http";
 
 const appRoutes: Routes = [
     {
@@ -41,7 +42,8 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

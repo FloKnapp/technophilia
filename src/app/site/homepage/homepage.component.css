@@ -1,0 +1,21 @@
+.next-event {
+    background: #101010;
+    text-align: center;
+    padding: 20px;
+}
+
+.next-event .teaser {
+    text-align: center;
+}
+
+.next-event .teaser .countdown {
+    font-weight: normal;
+    color: #49c693;
+    text-shadow: 0 1px 15px;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.next-event .location {
+    font-size: 2em;
+}

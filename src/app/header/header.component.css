@@ -1,0 +1,23 @@
+.header {
+    width: 100%;
+    height: 50px;
+    background: #303030;
+    position: fixed;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.header .logo {
+    text-align: left;
+    padding: 14px 0;
+    font-weight: 900;
+    display: inline-block;
+    cursor: pointer;
+    float: left;
+    text-transform: uppercase;
+}
+
+.header .logo:hover {
+    animation: ani 0.5s;
+    animation-iteration-count: infinite;
+}
+

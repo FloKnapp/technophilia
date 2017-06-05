@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:700|Maven+Pro');
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 1em;
+    background: #202020;
+    font-family: "Maven Pro", serif;
+    color: #CCCCCC;
+}
+
+.layer {
+    background: url('/images/black_denim.png') #404040;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin: 0;
+    transition: all .5s;
+    opacity: 1;
+    z-index: 99;
+}
+
+.layer.hidden {
+    opacity: 0;
+}
+
+.layer .logo {
+    width: 500px;
+    height: 150px;
+    font-size: 5em;
+    color: #FFF;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -250px;
+    margin-top: -75px;
+    font-family: "Maven Pro", serif;
+    text-align: center;
+    font-weight: 900;
+    text-shadow: 0 5px 10px rgba(0,0,0,1);
+    cursor: pointer;
+    line-height: 55px;
+    animation: ani 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.layer .logo span {
+    font-size: 0.3em;
+    letter-spacing: .5em;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background:before {
+    content: "";
+    width: 20%;
+    height: 150%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(255,255,255,0.1);
+    transform: rotate(25deg);
+    margin-top: -15%;
+    margin-right: -5%;
+}
+
+.background:after {
+    content: "";
+    width: 20%;
+    height: 150%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(255,255,255,0.1);
+    transform: rotate(-9deg);
+    margin-top: -15%;
+    margin-right: -5%;
+}
+
+@keyframes ani {
+
+    0% {
+        filter: blur(0px);
+    }
+
+    29% {
+        transform: scale(1);
+        filter: blur(0px);
+        text-shadow: 0 5px 10px rgba(0,0,0,1);
+    }
+
+    30% {
+        filter: blur(5px);
+        transform: scale(1.05);
+        text-shadow: 0 10px 20px rgba(0,0,0,0.7);
+    }
+
+    50% {
+        transform: scale(1.01);
+        filter: blur(2px);
+    }
+
+    100% {
+        transform: scale(1);
+        filter: blur(0px);
+    }
+
+}
+
+.stage {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background: url('/assets/image/stage.jpeg');
+    background-position-y: -240px;
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.stage img {
+    margin-top: -100px;
+}
+
+.wrapper .headline {
+    padding: 10px 0;
+}
+
+.wrapper .content {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+}
+
+.next-event {
+    background: #101010;
+    text-align: center;
+    padding: 20px;
+}
+
+.next-event .teaser {
+    text-align: center;
+}
+
+.next-event .teaser .countdown {
+    font-weight: normal;
+    color: #49c693;
+    text-shadow: 0 1px 15px;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.next-event .location {
+    font-size: 2em;
+}

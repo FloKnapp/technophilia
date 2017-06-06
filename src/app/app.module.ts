@@ -3,13 +3,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { EventsComponent } from './site/events/events.component';
-import { MenuComponent } from './menu/menu.component';
-import { HomepageComponent } from './site/homepage/homepage.component';
-import { ProfileComponent } from './site/profile/profile.component';
-import { ContactComponent } from './site/contact/contact.component';
+import { HeaderComponent } from './elements/header/header.component';
+import { EventsComponent } from './pages/events/events.component';
+import { MenuComponent } from './elements/menu/menu.component';
+import { HomepageComponent } from './pages/homepage/homepage.component';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { ContactComponent } from './pages/contact/contact.component';
 import { HttpModule } from "@angular/http";
+import { NewestEventComponent } from './elements/newest-event/newest-event.component';
 
 const appRoutes: Routes = [
     {
@@ -38,7 +39,8 @@ const appRoutes: Routes = [
     MenuComponent,
     HomepageComponent,
     ProfileComponent,
-    ContactComponent
+    ContactComponent,
+    NewestEventComponent
   ],
   imports: [
     BrowserModule,
